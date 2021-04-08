@@ -1,6 +1,7 @@
 import os
 from simple_chalk import chalk
 
+## A script for changing file names because I suck at the Terminal
 def changeFileName():
     try:
         print(chalk.cyan("Example: \n\n File Path: ./myfolder/pepe/file \n Rename to: ./myfolder/pepe/file2 \n\n"))

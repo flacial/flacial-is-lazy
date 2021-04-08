@@ -1,5 +1,6 @@
 from simple_chalk import chalk
 
+## A script for my Telegram channel posts
 def postMaker():
     tags = input("Tags: ")
     description = input("Description: ")
