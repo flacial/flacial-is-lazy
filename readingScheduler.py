@@ -45,4 +45,5 @@ def bookr(pages, start_page, end_page, pace, day, month):
     return "****************************"
 
 
-print(bookr(int(pages), int(start_page), int(end_page), int(pace), int(day), int(month)))
+if __name__ == '__main__':
+    print(bookr(int(pages), int(start_page), int(end_page), int(pace), int(day), int(month)))
