@@ -31,6 +31,7 @@ def scrab_hn():
             'score_sort': int(scores[i - 1].get_text().replace(' points', '')),
             'score': chalk.green('- ' + scores[i - 1].get_text()),
             'link': f"\n{chalk.yellowBright(title.get('href'))}"})
+        
     # Loop through a sorted array by score value
     for i, title in enumerate(sorted(titleMod, key=lambda k:k['score_sort'])):
         print(f'\n{i + 1} -', title['title'], title['score'], title['link'], '\n\n')
