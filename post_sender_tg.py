@@ -6,7 +6,7 @@ def postMaker():
     url = "https://api.telegram.org/<bot-key>/sendMessage"
     
     tags = input("\nTags: ")
-    if not tags.find('-'):
+    if tags.find('-') >= 0:
         return chalk.red("\nText has a hyphen!\n")
     else:
         description = input("Description: ")
@@ -16,7 +16,7 @@ def postMaker():
     
     data = {
         "chat_id": "<Chat-id>",
-        "text": f"<b>Tags:</b> {tags}\n\n<b>Description</b>: {description}\n\n<b>Link:</b> {link}",
+        "text": f"<b>Tags:</b> {tags}\n\n<b>Description:</b> {description}\n\n<b>Link:</b> {link}",
         "parse_mode": "html"
     }
     
